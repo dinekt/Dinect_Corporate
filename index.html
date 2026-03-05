@@ -229,10 +229,32 @@
       AI導入のご相談、ソフトウェア開発のお見積もり、<br>
       その他ご質問など、お気軽にご連絡ください。
     </p>
-    <a href="mailto:contact@dinect.jp" class="contact-btn reveal">
-      お問い合わせ
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </a>
+    <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xojkakbg" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="お名前" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="メールアドレス" required>
+      </div>
+      <div class="form-group">
+        <select name="category">
+          <option value="" disabled selected>お問い合わせ種別</option>
+          <option value="ai-dev">AIアプリケーション開発のご相談</option>
+          <option value="sw-dev">ソフトウェア開発のご相談</option>
+          <option value="dx">DXコンサルティング</option>
+          <option value="estimate">お見積もり依頼</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+      </div>
+      <button type="submit" class="contact-btn">
+        送信する
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </form>
+    <p class="contact-form-note reveal">※ 通常1〜2営業日以内にご返信いたします</p>
   </div>
 </section>
 
