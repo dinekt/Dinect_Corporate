@@ -1,10 +1,7 @@
-// Tech News - GitHub APIからdev-knowledge-baseのテックニュースを取得・表示
+// Tech News - ローカルのarticles.jsonから記事一覧を取得・表示
 (function () {
-  const REPO_OWNER = 'dinekt';
-  const REPO_NAME = 'dev-knowledge-base';
-  const BASE_PATH = 'tech-news';
-  const API_BASE = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${BASE_PATH}`;
-  const RAW_BASE = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/master/${BASE_PATH}`;
+  const ARTICLES_JSON = 'tech-news/articles.json';
+  const ARTICLES_BASE = 'tech-news';
 
   const archiveEl = document.getElementById('news-archive');
   const contentEl = document.getElementById('news-content');
@@ -33,38 +30,17 @@
   }
 
   async function loadArchive() {
-    // 月別ディレクトリ一覧を取得
-    const res = await fetch(API_BASE);
-    if (!res.ok) throw new Error('Failed to fetch archive');
-    const items = await res.json();
-
-    const monthDirs = items
-      .filter(item => item.type === 'dir' && /^\d{4}-\d{2}$/.test(item.name))
-      .map(item => item.name)
-      .sort()
-      .reverse();
-
-    // 各月の記事ファイルを取得
-    const monthPromises = monthDirs.map(async (month) => {
-      const res = await fetch(`${API_BASE}/${month}`);
-      if (!res.ok) return { month, dates: [] };
-      const files = await res.json();
-      const dates = files
-        .filter(f => f.name.endsWith('.md'))
-        .map(f => f.name.replace('.md', ''))
-        .sort()
-        .reverse();
-      return { month, dates };
-    });
-
-    const results = await Promise.all(monthPromises);
+    // articles.jsonから記事一覧を取得
+    const res = await fetch(ARTICLES_JSON);
+    if (!res.ok) throw new Error('Failed to fetch articles.json');
+    const data = await res.json();
 
     articlesByMonth = {};
     allDates = [];
-    for (const { month, dates } of results) {
-      if (dates.length > 0) {
-        articlesByMonth[month] = dates;
-        allDates.push(...dates);
+    for (const { month, articles } of data.months) {
+      if (articles.length > 0) {
+        articlesByMonth[month] = articles;
+        allDates.push(...articles);
       }
     }
     allDates.sort().reverse();
@@ -107,7 +83,7 @@
 
     try {
       const month = date.substring(0, 7);
-      const res = await fetch(`${RAW_BASE}/${month}/${date}.md`);
+      const res = await fetch(`${ARTICLES_BASE}/${month}/${date}.md`);
       if (!res.ok) throw new Error('Failed to fetch article');
       const markdown = await res.text();
 
