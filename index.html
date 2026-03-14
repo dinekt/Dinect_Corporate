@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dinekt - AIをより身近に、デジタルを生活に。</title>
-<meta name="description" content="Dinekt（ディネクト）は、AIアプリケーション・ソフトウェアの企画・開発を行う個人事業です。テクノロジーと人をつなぎ、AIの力をすべての人の日常へ届けます。">
-<meta property="og:title" content="Dinekt - AIをより身近に、デジタルを生活に。">
-<meta property="og:description" content="AIアプリケーション・ソフトウェアの企画・開発。テクノロジーと人をつなぐソリューションを提供します。">
+<title>Dinekt — disk | 個人開発者・AIエンジニア</title>
+<meta name="description" content="disk（Dinekt）の技術ブログ＆ポートフォリオ。AI活用・ソフトウェア開発・テックニュースを発信しています。">
+<meta property="og:title" content="Dinekt — disk | 個人開発者・AIエンジニア">
+<meta property="og:description" content="AI活用・ソフトウェア開発・テックニュースを発信する個人開発者diskのサイト。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dinekt.com/">
 <link rel="canonical" href="https://dinekt.com/">
@@ -16,25 +16,21 @@
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="Dinekt">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dinekt - AIをより身近に、デジタルを生活に。">
-<meta name="twitter:description" content="AIアプリケーション・ソフトウェアの企画・開発。テクノロジーと人をつなぐソリューションを提供します。">
+<meta name="twitter:title" content="Dinekt — disk | 個人開発者・AIエンジニア">
+<meta name="twitter:description" content="AI活用・ソフトウェア開発・テックニュースを発信する個人開発者diskのサイト。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
-<header id="header">
+<header id="header" class="scrolled">
   <a href="#" class="logo"><img src="assets/logo.png" alt="Dinekt" class="logo-img"></a>
   <nav id="nav">
-    <a href="#mission">Mission</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#company">Company</a>
     <a href="tech-news.html">Tech News</a>
-    <a href="#contact" class="nav-contact">Contact</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
   <div class="hamburger" id="hamburger">
     <span></span><span></span><span></span>
@@ -44,246 +40,134 @@
 <!-- Mobile menu overlay -->
 <div class="mobile-menu" id="mobile-menu">
   <nav class="mobile-nav">
-    <a href="#mission">Mission</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#company">Company</a>
     <a href="tech-news.html">Tech News</a>
-    <a href="#contact">Contact</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </div>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="hero-bg">
-    <canvas id="hero-network"></canvas>
-    <div class="hero-gradient-1"></div>
-    <div class="hero-gradient-2"></div>
-  </div>
-  <div class="hero-content">
-    <p class="hero-label">AI × Digital Solutions</p>
-    <h1 class="hero-title">
-      <span class="hero-title-accent">AI</span>をより身近に、<br>
-      デジタルを生活に。
-    </h1>
-    <p class="hero-sub">
-      テクノロジーの力で、日常にシームレスに溶け込む<br>
-      AIアプリケーション・ソフトウェアを開発しています。
+<!-- ===== HERO (compact, journal style) ===== -->
+<section class="journal-hero">
+  <div class="journal-hero-inner">
+    <div class="journal-hero-logo">
+      <img src="assets/logo.png" alt="Dinekt" class="hero-logo">
+    </div>
+    <div class="journal-hero-meta">
+      <span class="journal-prompt">$</span>
+      <span class="journal-typing">by <strong>disk</strong> — 個人開発者 / AIエンジニア</span>
+    </div>
+    <p class="journal-hero-desc">
+      AI活用・ソフトウェア開発について、考えたこと、試したこと、作ったものを記録しています。
     </p>
-    <div class="hero-cta">
-      <a href="#services" class="hero-btn-primary">
-        サービスを見る
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-      <a href="#contact" class="hero-btn-secondary">お問い合わせ</a>
-    </div>
-    <div class="hero-scroll">
-      <span>
-        Scroll
-        <div class="scroll-line"></div>
-      </span>
+    <div class="journal-tags">
+      <span>Python</span>
+      <span>TypeScript</span>
+      <span>Next.js</span>
+      <span>Claude Code</span>
+      <span>AI / LLM</span>
+      <span>IDP</span>
     </div>
   </div>
 </section>
 
-<!-- ===== MISSION ===== -->
-<section class="mission" id="mission">
-  <div class="mission-bg-text">MISSION</div>
-  <div class="mission-inner">
-    <p class="section-label reveal">Our Mission</p>
-    <h2 class="section-title-en reveal">Mission</h2>
-    <p class="section-title-jp reveal">Dinektのミッション</p>
-    <p class="mission-statement reveal">
-      テクノロジーと人を<span class="highlight">つなぐ</span>。<br>
-      AIの力を、すべての人の<span class="highlight">日常</span>へ。
-    </p>
-    <p class="mission-desc reveal">
-      Dinektは、Direct（直接）、Near（身近に）、Kontakt（つながる）を融合させた造語です。
-      AIやデジタル技術を、専門知識がなくても誰もが直接的に、身近に活用できる世界を目指しています。
-      複雑なテクノロジーをシンプルに、遠い存在だったAIをもっと近くに。
-      Dinektは、テクノロジーと人々の暮らしをつなぐソリューションを生み出し続けます。
-    </p>
-  </div>
-</section>
+<!-- ===== FEED ===== -->
+<main class="feed">
+  <div class="feed-inner">
 
-<!-- ===== SERVICES ===== -->
-<section class="services" id="services">
-  <div class="services-inner">
-    <p class="section-label reveal">What We Do</p>
-    <h2 class="section-title-en reveal">Services</h2>
-    <p class="section-title-jp reveal">事業内容</p>
-    <div class="services-grid">
-      <div class="service-card reveal reveal-delay-1">
-        <div class="service-icon service-icon-ai">
-          <i data-lucide="brain-circuit"></i>
-        </div>
-        <h3>AI Application Development</h3>
-        <p class="service-jp">AIアプリケーション開発</p>
-        <p>生成AI・機械学習を活用したアプリケーションの企画・設計・開発を行います。専門知識がなくてもAIの利便性を実感できる、誰にとっても使いやすいプロダクトを目指しています。</p>
+    <!-- Section: Tech News -->
+    <section class="feed-section">
+      <div class="feed-section-header">
+        <h2><span class="feed-hash">#</span> Tech News</h2>
+        <a href="tech-news.html" class="feed-more">Archive &rarr;</a>
       </div>
-      <div class="service-card reveal reveal-delay-2">
-        <div class="service-icon service-icon-sw">
-          <i data-lucide="code-xml"></i>
-        </div>
-        <h3>Software Development</h3>
-        <p class="service-jp">ソフトウェア開発</p>
-        <p>Webアプリケーション、Chrome拡張、デスクトップアプリなど、日常の課題を解決するソフトウェアを開発。複雑な操作を必要としない、シンプルで直感的なツールを提供します。</p>
+      <div class="feed-list">
+        <a href="tech-news.html" class="feed-item">
+          <time>2026.03.13</time>
+          <div class="feed-item-body">
+            <p class="feed-item-title">OpenAI Codex Security / Gemini CLI Plan Mode安定版 ほか7件</p>
+            <span class="feed-item-tag">daily</span>
+          </div>
+        </a>
+        <a href="tech-news.html" class="feed-item">
+          <time>2026.03.12</time>
+          <div class="feed-item-body">
+            <p class="feed-item-title">MS Patch Tuesday / Cursor Automations / Anthropic Time誌選出 ほか</p>
+            <span class="feed-item-tag">daily</span>
+          </div>
+        </a>
+        <a href="tech-news.html" class="feed-item">
+          <time>2026.03.11</time>
+          <div class="feed-item-body">
+            <p class="feed-item-title">Claude Code Review機能 / GEO市場$750B規模へ / GitHub Copilot Claude対応</p>
+            <span class="feed-item-tag">daily</span>
+          </div>
+        </a>
       </div>
-      <div class="service-card reveal reveal-delay-3">
-        <div class="service-icon service-icon-dx">
-          <i data-lucide="users"></i>
-        </div>
-        <h3>Accessible AI Products</h3>
-        <p class="service-jp">誰でも使えるAIプロダクト</p>
-        <p>ITに詳しくない方でもAIの恩恵を受けられるよう、直感的で分かりやすいプロダクトを自社開発しています。Chrome拡張やデスクトップアプリなど、日常にすぐ取り入れられるツールを提供します。</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ===== ABOUT ===== -->
-<section class="about" id="about">
-  <div class="about-inner">
-    <div class="about-visual">
-      <svg class="about-network" id="about-network" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- 接続線（JSで動的に更新） -->
-        <g class="net-lines" id="net-lines" stroke="rgba(59,130,246,0.2)" stroke-width="1"></g>
-        <!-- ノード（JSで動的に更新） -->
-        <g id="net-nodes"></g>
-        <!-- パルスリング -->
-        <circle class="net-pulse" cx="200" cy="150" r="20" stroke="#2563eb" stroke-width="0.5" fill="none" opacity="0">
-          <animate attributeName="r" values="10;60" dur="3s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.4;0" dur="3s" repeatCount="indefinite"/>
-        </circle>
-        <circle class="net-pulse" cx="200" cy="150" r="20" stroke="#2563eb" stroke-width="0.5" fill="none" opacity="0">
-          <animate attributeName="r" values="10;60" dur="3s" begin="1.5s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.4;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
-    </div>
-    <div class="about-text">
-      <p class="section-label reveal">Who We Are</p>
-      <h2 class="section-title-en reveal">About</h2>
-      <p class="section-title-jp reveal">Dinektについて</p>
-      <h3 class="reveal">技術を、価値に変える。<br>AIを、当たり前に。</h3>
-      <p class="reveal">
-        Dinektは、AIを活用したアプリケーション・ソフトウェアの開発を中心に事業を展開する個人事業です。
-        「AIは難しそう」と感じている方にこそ届くプロダクトを作り、テクノロジーの恩恵を誰もが享受できる世界を目指しています。
-      </p>
-      <p class="reveal">
-        「テクノロジーは、使う人のためにある」という信念のもと、
-        専門知識がなくても直感的に使えるプロダクトづくりにこだわっています。
-      </p>
-      <div class="about-values reveal">
-        <div class="value-item">
-          <p class="val-num">01</p>
-          <h4>Simplicity</h4>
-          <p>複雑さの裏にある本質を捉え、シンプルなUXに落とし込む</p>
-        </div>
-        <div class="value-item">
-          <p class="val-num">02</p>
-          <h4>Agility</h4>
-          <p>変化の速いAI領域で、スピード感ある開発と柔軟な対応</p>
-        </div>
-        <div class="value-item">
-          <p class="val-num">03</p>
-          <h4>Impact</h4>
-          <p>技術のための技術ではなく、実際の業務に確かな効果をもたらす</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Divider -->
+    <hr class="feed-divider">
 
-<!-- ===== COMPANY ===== -->
-<section class="company" id="company">
-  <div class="company-inner">
-    <p class="section-label reveal">Information</p>
-    <h2 class="section-title-en reveal">Company</h2>
-    <p class="section-title-jp reveal">事業者情報</p>
-    <table class="company-table reveal">
-      <tr>
-        <th>屋号</th>
-        <td>Dinekt（ディネクト）</td>
-      </tr>
-      <tr>
-        <th>事業形態</th>
-        <td>個人事業</td>
-      </tr>
-      <tr>
-        <th>代表</th>
-        <td>岡 大介</td>
-      </tr>
-      <tr>
-        <th>事業内容</th>
-        <td>
-          AIアプリケーション・ソフトウェアの企画・開発<br>
-          業務自動化ツールの開発・提供
-        </td>
-      </tr>
-      <tr>
-        <th>設立</th>
-        <td>2026年2月</td>
-      </tr>
-    </table>
-  </div>
-</section>
+    <!-- Section: Articles -->
+    <section class="feed-section">
+      <div class="feed-section-header">
+        <h2><span class="feed-hash">#</span> Articles</h2>
+      </div>
+      <div class="feed-list">
+        <div class="feed-item feed-item-placeholder">
+          <div class="feed-item-body">
+            <p class="feed-item-title feed-muted">// 記事を準備中 — Zennで技術記事を公開予定</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="contact" id="contact">
-  <canvas class="contact-bg-network" id="contact-network"></canvas>
-  <div class="contact-inner">
-    <p class="section-label reveal" style="color:var(--accent-light);">Get in Touch</p>
-    <h2 class="section-title-en reveal" style="color:#fff;">Contact</h2>
-    <p class="section-title-jp reveal" style="color:var(--text-on-dark);">お問い合わせ</p>
-    <p class="contact-desc reveal">
-      プロダクトに関するご質問、ソフトウェア開発のご相談、<br>
-      その他お気軽にご連絡ください。
-    </p>
-    <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xojkakbg" method="POST">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="お名前" required>
+    <!-- Divider -->
+    <hr class="feed-divider">
+
+    <!-- Section: Projects -->
+    <section class="feed-section">
+      <div class="feed-section-header">
+        <h2><span class="feed-hash">#</span> Projects</h2>
       </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="メールアドレス" required>
+      <div class="feed-projects">
+        <div class="feed-project">
+          <div class="project-status project-status-active"></div>
+          <div class="project-info">
+            <h3>ScoreLoop</h3>
+            <p>ゴルフAIコーチング SaaS — スイング分析・AI練習提案</p>
+          </div>
+          <div class="project-tech">Next.js / Supabase / OpenAI</div>
+        </div>
+        <div class="feed-project">
+          <div class="project-status project-status-active"></div>
+          <div class="project-info">
+            <h3>Hobobat PDF</h3>
+            <p>PDFビューア＆エディタ — 業務用ドキュメント処理ツール</p>
+          </div>
+          <div class="project-tech">Python / PySide6 / PyMuPDF</div>
+        </div>
       </div>
-      <div class="form-group">
-        <select name="category">
-          <option value="" disabled selected>お問い合わせ種別</option>
-          <option value="ai-dev">AIアプリケーション開発のご相談</option>
-          <option value="sw-dev">ソフトウェア開発のご相談</option>
-          <option value="product">プロダクトに関するご質問</option>
-          <option value="estimate">お見積もり依頼</option>
-          <option value="other">その他</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
-      </div>
-      <button type="submit" class="contact-btn">
-        送信する
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </button>
-    </form>
-    <p class="contact-form-note reveal">※ 通常1〜2営業日以内にご返信いたします</p>
+    </section>
+
   </div>
-</section>
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="footer-inner">
     <div class="footer-left">
       <a href="#" class="footer-logo"><img src="assets/logo.png" alt="Dinekt" class="footer-logo-img"></a>
-      <p class="footer-tagline">AIをより身近に、デジタルを生活に。</p>
+      <p class="footer-tagline">disk — 個人開発者 / AIエンジニア</p>
     </div>
     <nav class="footer-nav">
-      <a href="#mission">Mission</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#company">Company</a>
       <a href="tech-news.html">Tech News</a>
-      <a href="#contact">Contact</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
+    <div class="footer-info">
+      <p>Dinekt（ディネクト）| 個人事業 | Since 2026</p>
+    </div>
     <p class="footer-copy">&copy; 2026 Dinekt. All Rights Reserved.</p>
   </div>
 </footer>
@@ -291,17 +175,15 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Dinekt",
+  "@type": "Person",
+  "name": "disk",
   "url": "https://dinekt.com",
-  "logo": "https://dinekt.com/assets/logo.png",
-  "description": "AIアプリケーション・ソフトウェアの企画・開発。テクノロジーと人をつなぐソリューションを提供します。",
-  "founder": {
-    "@type": "Person",
-    "name": "岡 大介"
-  },
-  "foundingDate": "2026-02",
-  "sameAs": []
+  "jobTitle": "個人開発者 / AIエンジニア",
+  "knowsAbout": ["AI", "Python", "TypeScript", "IDP", "ソフトウェア開発"],
+  "brand": {
+    "@type": "Brand",
+    "name": "Dinekt"
+  }
 }
 </script>
 <script src="js/main.js"></script>

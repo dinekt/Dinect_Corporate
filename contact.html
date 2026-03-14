@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Dinekt</title>
+<meta name="description" content="Dinektへのお問い合わせ。ソフトウェア開発・AI導入に関するご相談など。">
+<link rel="canonical" href="https://dinekt.com/contact.html">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Contact — Dinekt">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Dinekt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo"><img src="assets/logo.png" alt="Dinekt" class="logo-img"></a>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="tech-news.html">Tech News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="nav-active">Contact</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="tech-news.html">Tech News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<main class="page-content">
+  <div class="page-inner page-inner-narrow">
+    <h1 class="page-title"><span class="feed-hash">#</span> Contact</h1>
+    <p class="page-desc">
+      ソフトウェア開発・AI導入に関するご相談など、お気軽にどうぞ。
+    </p>
+
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xojkakbg" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="お名前" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="メールアドレス" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="" disabled selected>お問い合わせ種別</option>
+          <option value="sw-dev">ソフトウェア開発のご相談</option>
+          <option value="ai-consulting">AI導入・活用に関するご質問</option>
+          <option value="collaboration">コラボレーション・協業のご提案</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="お問い合わせ内容" required></textarea>
+      </div>
+      <button type="submit" class="contact-btn contact-btn-sm">
+        送信する &rarr;
+      </button>
+      <p class="form-note">※ 通常1〜2営業日以内にご返信いたします</p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Dinekt" class="footer-logo-img"></a>
+      <p class="footer-tagline">disk — 個人開発者 / AIエンジニア</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="tech-news.html">Tech News</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Dinekt. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
