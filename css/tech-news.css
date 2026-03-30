@@ -126,6 +126,12 @@
   font-weight: 500;
 }
 
+/* ============ MAIN CONTENT ============ */
+.news-main {
+  min-width: 0;
+  overflow: hidden;
+}
+
 /* ============ ARTICLE ============ */
 .news-article {
   background: rgba(255,255,255,0.03);
@@ -133,7 +139,6 @@
   border-radius: 16px;
   padding: 48px;
   overflow: hidden;
-  min-width: 0;
 }
 
 .news-loading {
