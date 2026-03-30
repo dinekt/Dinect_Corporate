@@ -132,6 +132,8 @@
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 16px;
   padding: 48px;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .news-loading {
@@ -255,6 +257,9 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .news-article th {
@@ -310,11 +315,6 @@
 }
 
 /* ============ OVERFLOW PREVENTION ============ */
-.news-article {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
 .news-article a {
   color: #93c5fd;
   text-decoration: underline;
@@ -332,14 +332,17 @@
   border-radius: 8px;
 }
 
-.news-article table {
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.news-article p,
+.news-article li,
+.news-article td,
+.news-article th,
+.news-article blockquote {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-.news-article pre {
-  max-width: 100%;
+.news-article strong {
+  word-break: break-word;
 }
 
 /* ============ RESPONSIVE ============ */
