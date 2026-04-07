@@ -3,21 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dinekt — disk | 個人開発者・AIエンジニア</title>
-<meta name="description" content="disk（Dinekt）の技術ブログ＆ポートフォリオ。AI活用・ソフトウェア開発・テックニュースを発信しています。">
-<meta property="og:title" content="Dinekt — disk | 個人開発者・AIエンジニア">
-<meta property="og:description" content="AI活用・ソフトウェア開発・テックニュースを発信する個人開発者diskのサイト。">
+<title>Dinekt — disk | AI × ソフトウェア開発の実験ログ</title>
+<meta name="description" content="disk（Dinekt）— AI活用とソフトウェア開発について、考えたこと・試したこと・作ったものを記録しています。">
+<meta property="og:title" content="Dinekt — disk | AI × ソフトウェア開発の実験ログ">
+<meta property="og:description" content="AI活用とソフトウェア開発の実験ログ。考えたこと、試したこと、作ったもの。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dinekt.com/">
 <link rel="canonical" href="https://dinekt.com/">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <meta name="robots" content="index, follow">
-<meta property="og:image" content="https://dinekt.com/assets/logo.png">
+<meta property="og:image" content="https://dinekt.com/assets/banner.png">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="Dinekt">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dinekt — disk | 個人開発者・AIエンジニア">
-<meta name="twitter:description" content="AI活用・ソフトウェア開発・テックニュースを発信する個人開発者diskのサイト。">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@dinekt_dev">
+<meta name="twitter:title" content="Dinekt — disk | AI × ソフトウェア開発の実験ログ">
+<meta name="twitter:description" content="AI活用とソフトウェア開発の実験ログ。考えたこと、試したこと、作ったもの。">
+<meta name="twitter:image" content="https://dinekt.com/assets/banner.png">
+<link rel="icon" type="image/png" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -26,7 +29,7 @@
 
 <!-- ===== HEADER ===== -->
 <header id="header" class="scrolled">
-  <a href="#" class="logo"><img src="assets/logo.png" alt="Dinekt" class="logo-img"></a>
+  <a href="#" class="logo"><img src="assets/banner.png" alt="Dinekt" class="logo-img"></a>
   <nav id="nav">
     <a href="tech-news.html">Tech News</a>
     <a href="about.html">About</a>
@@ -49,15 +52,16 @@
 <!-- ===== HERO (compact, journal style) ===== -->
 <section class="journal-hero">
   <div class="journal-hero-inner">
-    <div class="journal-hero-logo">
-      <img src="assets/logo.png" alt="Dinekt" class="hero-logo">
-    </div>
-    <div class="journal-hero-meta">
-      <span class="journal-prompt">$</span>
-      <span class="journal-typing">by <strong>disk</strong> — 個人開発者 / AIエンジニア</span>
+    <div class="journal-hero-profile">
+      <img src="assets/icon.png" alt="disk" class="hero-logo">
+      <div class="journal-hero-meta">
+        <span class="journal-prompt">$</span>
+        <span class="journal-typing"><strong>disk</strong> @ Dinekt</span>
+      </div>
     </div>
     <p class="journal-hero-desc">
-      AI活用・ソフトウェア開発について、考えたこと、試したこと、作ったものを記録しています。
+      考えたこと、試したこと、作ったものを記録する場所。<br>
+      AI活用とソフトウェア開発の実験ログ。
     </p>
     <div class="journal-tags">
       <span>Python</span>
@@ -65,6 +69,9 @@
       <span>Next.js</span>
       <span>Claude Code</span>
       <span>AI / LLM</span>
+    </div>
+    <div class="journal-social">
+      <a href="https://x.com/dinekt_dev" target="_blank" rel="noopener" class="social-link">@dinekt_dev <span class="social-arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -93,6 +100,13 @@
         <h2><span class="feed-hash">#</span> Articles</h2>
       </div>
       <div class="feed-list">
+        <a href="https://zenn.dev/dinekt/articles/ai-engineering-evolution-authority" class="feed-item" target="_blank" rel="noopener">
+          <time>2026.04.08</time>
+          <div class="feed-item-body">
+            <p class="feed-item-title">AIエンジニアリング進化の系譜 — 第4の波は何か</p>
+            <span class="feed-item-tag">Zenn</span>
+          </div>
+        </a>
         <a href="https://zenn.dev/dinekt/articles/ai-virtual-team-with-claude-code" class="feed-item" target="_blank" rel="noopener">
           <time>2026.03.15</time>
           <div class="feed-item-body">
@@ -112,18 +126,16 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-left">
-      <a href="#" class="footer-logo"><img src="assets/logo.png" alt="Dinekt" class="footer-logo-img"></a>
-      <p class="footer-tagline">disk — 個人開発者 / AIエンジニア</p>
+      <a href="#" class="footer-logo"><img src="assets/banner.png" alt="Dinekt" class="footer-logo-img"></a>
+      <p class="footer-tagline">disk — AI × ソフトウェア開発</p>
     </div>
     <nav class="footer-nav">
       <a href="tech-news.html">Tech News</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="https://x.com/dinekt_dev" target="_blank" rel="noopener">X</a>
     </nav>
-    <div class="footer-info">
-      <p>Dinekt（ディネクト）| Since 2026</p>
-    </div>
-    <p class="footer-copy">&copy; 2026 Dinekt. All Rights Reserved.</p>
+    <p class="footer-copy">&copy; 2026 Dinekt</p>
   </div>
 </footer>
 
@@ -133,8 +145,12 @@
   "@type": "Person",
   "name": "disk",
   "url": "https://dinekt.com",
-  "jobTitle": "個人開発者 / AIエンジニア",
-  "knowsAbout": ["AI", "Python", "TypeScript", "ソフトウェア開発"],
+  "jobTitle": "ソフトウェア開発者 / AIエンジニア",
+  "knowsAbout": ["AI", "LLM", "Python", "TypeScript", "ソフトウェア開発"],
+  "sameAs": [
+    "https://x.com/dinekt_dev",
+    "https://zenn.dev/dinekt"
+  ],
   "brand": {
     "@type": "Brand",
     "name": "Dinekt"
